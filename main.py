@@ -37,5 +37,6 @@ response = conn.execute(
 )
 while response.has_next():
     print(response.get_next())
+response.close()
 conn.close()
 db.close()
